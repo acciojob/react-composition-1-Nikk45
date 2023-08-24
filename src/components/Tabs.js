@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Tabs = (props)=>{
+
+    const [result,setResult] = useState('');
 
     const showResult =(key)=>{
         props.tabs.map((tab)=>{
             if(tab.key === key){
-                props.setResult(tab.contents)
+                setResult(tab.contents)
             }
         })
     }
@@ -20,6 +22,7 @@ const Tabs = (props)=>{
             })
         }
         </ul>
+        {result && result}
         </>
     )
 }
