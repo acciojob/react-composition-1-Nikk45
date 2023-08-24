@@ -13,6 +13,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+        
         <Tabs tabs={tabs} setResult={setResult}/>
         {result && <p>This is the content for {result}</p>}
     </div>
