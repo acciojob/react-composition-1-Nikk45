@@ -1,11 +1,11 @@
 import React from "react";
 
-const Tabs = ({tabs,setResult})=>{
+const Tabs = (props)=>{
 
     const showResult =(key)=>{
-        tabs.map((tab)=>{
+        props.tabs.map((tab)=>{
             if(tab.key === key){
-                setResult(tab.contents)
+                props.setResult(tab.contents)
             }
         })
     }
@@ -15,7 +15,7 @@ const Tabs = ({tabs,setResult})=>{
         <ul>
             
         {
-            tabs.map((tab)=>{
+            props.tabs.map((tab)=>{
                 return <li key={tab.key} onClick={()=>showResult(tab.key)}>{tab.titles}</li>
             })
         }
