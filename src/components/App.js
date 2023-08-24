@@ -15,7 +15,7 @@ const App = () => {
         {/* Do not remove the main div */}
 
         <Tabs tabs={tabs} setResult={setResult}/>
-        {result && <p>{result}</p>}
+        {result && result}
     </div>
   )
 }
