@@ -5,7 +5,7 @@ const Tabs = ({tabs,setResult})=>{
     const showResult =(key)=>{
         tabs.map((tab)=>{
             if(tab.key === key){
-                setResult(tab.content)
+                setResult(tab.contents)
             }
         })
     }
@@ -16,7 +16,7 @@ const Tabs = ({tabs,setResult})=>{
             
         {
             tabs.map((tab)=>{
-                return <li key={tab.key} onClick={()=>showResult(tab.key)}>{tab.title}</li>
+                return <li key={tab.key} onClick={()=>showResult(tab.key)}>{tab.titles}</li>
             })
         }
         </ul>
