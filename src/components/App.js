@@ -5,8 +5,11 @@ import Tabs from "./Tabs";
 
 const App = () => {
 
-  const tabs = [{key:'1',titles:"Tab 1", contents:"This is the content for Tab 1."},
-  {key:'2',titles:"Tab 2", contents:"This is the content for Tab 2."},{key:'3',titles:"Tab 3", contents:"This is the content for Tab 3."}];
+  const tabs = [
+    {titles:"Tab 1", contents:"This is the content for Tab 1."},
+    {titles:"Tab 2", contents:"This is the content for Tab 2."},
+    {titles:"Tab 3", contents:"This is the content for Tab 3."}
+  ];
 
 
   return (
